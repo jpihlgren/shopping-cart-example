@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Simple Shopping</string>
+
+    <string name="list_title">Products</string>
+
+    <string name="details_title">Product Details</string>
+    <string name="details_info_header">Specifications</string>
+    <string name="details_color">Color: %s</string>
+    <string name="details_material">Material: %s</string>
+    <string name="details_nbr_seats">Number of seats: %d</string>
+    <string name="details_type_label">Furniture type: %s</string>
+    <string name="details_type_couch">couch</string>
+    <string name="details_type_chair">chair</string>
+    <string name="details_add_to_cart">Add to cart</string>
+    <string name="details_added_to_cart">%s has been added to the cart</string>
+    <string name="details_action_view_cart">Show cart</string>
+    <string name="details_product_not_found">Product not found</string>
+
+    <string name="cart_title">Shopping Cart</string>
+    <string name="cart_empty">Your cart is empty.</string>
+    <string name="cart_item_count">Quantity: %d</string>
+    <string name="cart_confirm_remove">Remove %s from the cart?</string>
+    <string name="cart_confirm_remove_ok">Remove</string>
+    <string name="cart_confirm_remove_cancel">Cancel</string>
+    <string name="cart_max_count">You cannot add more than 10 of this product to the cart.</string>
+    <string name="cart_max_count_ok">OK</string>
+    <string name="cart_total">Total: %s</string>
+</resources>
