@@ -1,6 +1,7 @@
 package com.example.simpleshopping.ui.screens
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -50,7 +51,11 @@ fun CartScreen(
             )
         }
     ) { paddingValues ->
-        Column(modifier = Modifier.padding(paddingValues)) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+        ) {
             if (cartItems.isEmpty()) {
                 Text(
                     text = stringResource(id = R.string.cart_empty),
@@ -61,7 +66,9 @@ fun CartScreen(
                     fontSize = 18.sp
                 )
             } else {
-                LazyColumn {
+                LazyColumn(
+                    modifier = Modifier.weight(1f)
+                ) {
                     items(cartItems) { cartItem ->
                         CartListItem(
                             cartItem = cartItem,
